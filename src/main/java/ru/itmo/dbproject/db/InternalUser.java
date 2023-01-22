@@ -9,14 +9,10 @@ import jakarta.persistence.Table;
 @Table(name = "Users")
 public class InternalUser {
     @Id
-    @Column(unique = true, nullable = false)
-    private Integer uid;
-
-    @Column(nullable = false, length = 64)
-    private String username;
-
     @Column(nullable = false, length = 32)
     private String login;
+    @Column(nullable = false, length = 64)
+    private String username;
 
     @Column(nullable = false, length = 256)
     private String password;
@@ -27,20 +23,11 @@ public class InternalUser {
     public InternalUser() {
     }
 
-    public InternalUser(Integer uid, String username, String login, String password, String token) {
-        this.uid = uid;
-        this.username = username;
+    public InternalUser(String login, String username, String password, String token) {
         this.login = login;
+        this.username = username;
         this.password = password;
         this.token = token;
-    }
-
-    public Integer getUid() {
-        return uid;
-    }
-
-    public void setUid(Integer uid) {
-        this.uid = uid;
     }
 
     public String getUsername() {
