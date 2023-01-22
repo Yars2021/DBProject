@@ -1,0 +1,6 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /
+    session:
+      timeout: 600s
