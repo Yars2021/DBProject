@@ -1,4 +1,4 @@
-package com.example.dbproject;
+package ru.itmo.dbproject;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

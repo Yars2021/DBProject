@@ -1,4 +1,4 @@
-package com.example.dbproject;
+package ru.itmo.dbproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
